@@ -1,0 +1,12 @@
+.square {
+    background-color: darkblue;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.menu {
+   bottom: 50px;
+    right: 50px;
+    position: absolute;
+}
