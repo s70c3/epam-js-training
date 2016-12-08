@@ -1,0 +1,109 @@
+* {
+  font-family: "PT Sans";
+}
+
+.row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.all {
+    width: 80%;
+    max-width: 1010px;
+    margin: 0px auto;
+    padding: 55px 20px 0;
+    color: #717f95;
+}
+.all__header {
+    font-family: "PT Sans Narrow";
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.me__photo {
+    flex-basis: 200px;
+}
+.info__me {
+    flex-basis: 370px;
+}
+.experience__header {
+    color: #3d9ccc;
+    font-weight: bold;
+}
+
+.experience__header_now {
+    color: #96c93c;
+}
+
+.experience__position {
+    font_size: 1.5em ;
+}
+
+.experience__year {
+    margin-bottom: 30px;
+}
+.skills__element {
+    display: inline;
+}
+
+.skills__separate {
+    padding: 25px 0;
+}
+
+
+.last__project {
+
+    text-align: center;
+}
+
+.skills__element {
+    text-align: center;
+}
+
+
+
+.interests__photo {
+    width: 200px;
+}
+.instruments___element {
+    height: 25px;
+    margin: 5px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    min-width:270px;
+}
+
+.skills__separate {
+    justify-content: space-around
+}
+
+.tools {
+    flex-basis:50%;
+    min-width: 270px;
+}
+
+.activity {
+    flex-basis:50%;
+    min-width: 270px;
+}
+footer {
+    margin: 50px auto;
+    text-align: center;
+    clear: both;
+}
+
+.footer__text {
+    font-style: italic;
+}
+
+figure {
+ margin: 0px;
+}
