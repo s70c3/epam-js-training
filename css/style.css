@@ -8,7 +8,6 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -20,6 +19,11 @@
     color: #717f95;
 }
 
+.date {
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
 .all__header {
     font-family: "PT Sans Narrow";
     margin-bottom: 30px;
@@ -35,7 +39,7 @@
     height: 1px;
     width: 25%;
     background-color: #cecece;
-
+}
 .me__separator .icon {
     width: 24px;
     height: 22px;
@@ -48,7 +52,7 @@
     transition: all 0.5s ease;
 }
 
-}
+
 
 .info__me {
     flex-basis: 100%;
@@ -122,10 +126,30 @@
     background: none;
 }
 
-.skills__element {
-    display: inline;
+.skills {
+
 }
 
+.skills__pb {
+    width: 210px;
+    height: 210px;
+    display: block;
+    position: relative;
+}
+
+.skills__pb__value {
+    margin: 0;
+    position: absolute;
+    top: 43%;
+    left: 34%;
+    font-size: 3em;
+    font-family: "HelveticaNeueUltraLight", sans-serif;
+}
+.skills__svg {
+    transform: rotate(-90deg);
+    width: 210px;
+    height: 210px;
+}
 .skills__separate {
     padding: 25px 0;
 }
@@ -136,6 +160,7 @@
 }
 
 .skills__element {
+    display: inline;
     text-align: center;
 }
 
@@ -236,11 +261,18 @@ footer {
     width: 90%;
 }
 
+.photo {
+    width: 150px;
+}
+
+.photo img {
+    width: 150px;
+}
 figure {
     margin: 0px;
 }
 
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 1024px) {
     .all {
         padding: 55px 20px 0;
     }
@@ -263,27 +295,5 @@ figure {
 
     .activity {
         flex-basis: 32%;
-    }
-}
-
-@media screen and (max-width: 748px) {
-    .all {
-        padding: 55px 20px 0;
-    }
-
-    .me__photo {
-        flex-basis: 100%;
-    }
-
-    .info__me {
-        flex-basis: 100%;
-    }
-
-    .experience {
-        flex-basis: 100%;
-    }
-
-    .skills__separate {
-        flex-flow: column;
     }
 }
