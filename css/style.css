@@ -20,6 +20,7 @@
 
 .all {
     max-width: 1010px;
+    min-width: 372px;
     margin: 0px auto;
     padding: 55px 20px 0;
     color: #717f95;
@@ -413,35 +414,3 @@ figure {
         flex-basis: 32%;
     }
 }
-/*
-
-@media all and (max-width: 748px) {
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .all {
-        padding: 55px 20px 0;
-    }
-
-    .me__photo {
-        flex-basis: 100%;
-    }
-
-    .info__me {
-        flex-basis: 372px;
-    }
-    .experience {
-        flex-basis: 100%;
-    }
-    .interests__element {
-        flex-basis: 35%;
-    }
-
-    .skills__separate {
-        flex-flow: column;
-    }
-}
-
-*/
