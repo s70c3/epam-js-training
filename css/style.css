@@ -2,13 +2,16 @@
     font-family: "PT Sans";
 }
 
+
+@font-face {
+    font-family: 'HelveticaNeueUltraLight';
+    src: url("../fonts/HelveticaNeue-UltraLight.otf"); }
 .row {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -20,6 +23,11 @@
     color: #717f95;
 }
 
+.date {
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
 .all__header {
     font-family: "PT Sans Narrow";
     margin-bottom: 30px;
@@ -35,7 +43,7 @@
     height: 1px;
     width: 25%;
     background-color: #cecece;
-
+}
 .me__separator .icon {
     width: 24px;
     height: 22px;
@@ -48,7 +56,7 @@
     transition: all 0.5s ease;
 }
 
-}
+
 
 .info__me {
     flex-basis: 100%;
@@ -122,8 +130,8 @@
     background: none;
 }
 
-.skills__element {
-    display: inline;
+.skills {
+
 }
 
 .skills__separate {
@@ -136,9 +144,15 @@
 }
 
 .skills__element {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    flex-basis: 250px;
 }
 
+.skills__element img {
+    width: 190px;
+}
 .interests__photo {
     width: 200px;
 }
@@ -171,7 +185,7 @@
 }
 
 .progress_bar {
-    animation: animate 0.9s linear;
+    animation: animate 0.9s ease-in;
     animation-fill-mode: forwards;
     transition: width 1s linear;
     overflow: hidden;
@@ -180,22 +194,80 @@
     top: 0;
     left: 0;
     width: 0;
-
+    z-index: -1;
 
 }
 
 .pb-photoshop {
     background: #1ba0e1;
-    width: 90%;
-    z-index: -1;
+    max-width: 90%;
+
 
 }
-
 .pb-illustrator {
     background: #8cbf26;
     max-width: 70%;
-    z-index: -1;
+
 }
+.pb-indesign {
+    background: #b664e6;
+    max-width: 40%;
+}
+.pb-sketch {
+    background: #25b9b8;
+    max-width: 20%;
+
+}
+.pb-axure {
+    background: #f09709;
+    max-width: 50%;
+}
+
+
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 10% 360%; }
+    20% {
+        stroke-dasharray: 21% 360%; }
+    40% {
+        stroke-dasharray: 40% 360%; }
+    60% {
+        stroke-dasharray: 60% 360%; }
+    80% {
+        stroke-dasharray: 100% 360%; }
+    100% {
+        stroke-dasharray: 170% 360%; } }
+
+.skills .skills__element:nth-child(1) .cpb-progress-value {
+    stroke-dasharray: 190% 110%; }
+
+.skills .skills__element:nth-child(2) .cpb-progress-value {
+    stroke-dasharray: 250% 110%; }
+
+.skills .skills__element:nth-child(3) .cpb-progress-value {
+    stroke-dasharray: 200% 110%; }
+
+.circle-progress-bar {
+    width: 210px;
+    height: 210px;
+    display: block;
+    position: relative; }
+.circle-progress-bar .circle-svg {
+    transform: rotate(-90deg);
+    width: 210px;
+    height: 210px; }
+.circle-progress-bar .cpb-value {
+    margin: 0;
+    position: absolute;
+    top: 43%;
+    left: 34%;
+    font-size: 3em;
+    font-family: "HelveticaNeueUltraLight", sans-serif; }
+.circle-progress-bar .cpb-value p {
+    font-family: "HelveticaNeueUltraLight", sans-serif; }
+.circle-progress-bar .cpb-progress {
+    animation: dash 0.5s linear alternate; }
 
 .activity {
     border-radius: 3px;
@@ -203,7 +275,7 @@
     padding: 10px;
     justify-content: space-between;
     flex-basis: 100%;
-    min-width: 270px;
+  /*  min-width: 270px;*/
     list-style-type: none;
     margin-top: 0;
 }
@@ -218,7 +290,7 @@
 
 .tools {
     flex-basis: 100%;
-    min-width: 270px;
+   /* min-width: 270px;*/
 }
 
 footer {
@@ -231,16 +303,26 @@ footer {
     font-style: italic;
 }
 
-.pb_photoshop {
-    background-color: #1ba0e1;
-    width: 90%;
+
+
+.photo {
+    width: 150px;
 }
 
+.photo img {
+    width: 150px;
+}
 figure {
     margin: 0px;
 }
 
-@media screen and (min-width: 748px) {
+@keyframes animate {
+    0% {
+        width: 0; }
+    100% {
+        width: 100%; } }
+
+@media screen and (min-width: 1024px) {
     .all {
         padding: 55px 20px 0;
     }
@@ -266,24 +348,33 @@ figure {
     }
 }
 
-@media screen and (max-width: 748px) {
+
+@media all and (max-width: 748px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .all {
         padding: 55px 20px 0;
     }
-
     .me__photo {
         flex-basis: 100%;
     }
 
     .info__me {
-        flex-basis: 100%;
+        flex-basis: auto;
     }
 
     .experience {
         flex-basis: 100%;
+    }
+    .interests__element {
+        flex-basis: 35%;
     }
 
     .skills__separate {
         flex-flow: column;
     }
 }
+
