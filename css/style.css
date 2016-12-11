@@ -43,7 +43,10 @@
 .me__photo {
     flex-basis: 100%;
 }
-
+.me__separator {
+    display: flex;
+    justify-content: space-around;
+}
 .me__separator .start, .me__separator .end {
     height: 1px;
     width: 25%;
@@ -410,7 +413,7 @@ figure {
         flex-basis: 32%;
     }
 }
-
+/*
 
 @media all and (max-width: 748px) {
     .row {
@@ -421,12 +424,13 @@ figure {
     .all {
         padding: 55px 20px 0;
     }
+
     .me__photo {
         flex-basis: 100%;
     }
 
     .info__me {
-        flex-basis: 10px;
+        flex-basis: 372px;
     }
     .experience {
         flex-basis: 100%;
@@ -440,3 +444,4 @@ figure {
     }
 }
 
+*/
