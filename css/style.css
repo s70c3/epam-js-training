@@ -7,6 +7,10 @@
     font-family: 'HelveticaNeueUltraLight';
     src: url("../fonts/HelveticaNeue-UltraLight.otf");
 }
+.undelined {
+    font-family: "PT Sans Narrow";
+    text-decoration: underline;
+}
 
 .row {
     display: -webkit-box;
