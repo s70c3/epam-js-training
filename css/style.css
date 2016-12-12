@@ -20,6 +20,7 @@
 
 .all {
     max-width: 1010px;
+    min-width: 372px;
     margin: 0px auto;
     padding: 55px 20px 0;
     color: #717f95;
@@ -43,7 +44,10 @@
 .me__photo {
     flex-basis: 100%;
 }
-
+.me__separator {
+    display: flex;
+    justify-content: space-around;
+}
 .me__separator .start, .me__separator .end {
     height: 1px;
     width: 25%;
@@ -285,8 +289,6 @@
     max-width: 50%;
 }
 
-
-
 @keyframes dash {
     0% {
         stroke-dasharray: 10% 360%; }
@@ -299,15 +301,16 @@
     80% {
         stroke-dasharray: 100% 360%; }
     100% {
-        stroke-dasharray: 170% 360%; } }
+        stroke-dasharray: 170% 360%; }
+}
 
-.skills .skills__element:nth-child(1) .cpb-progress-value {
+ .skills__element:nth-child(1) .cpb-progress-value {
     stroke-dasharray: 190% 110%; }
 
-.skills .skills__element:nth-child(2) .cpb-progress-value {
+.skills__element:nth-child(2) .cpb-progress-value {
     stroke-dasharray: 250% 110%; }
 
-.skills .skills__element:nth-child(3) .cpb-progress-value {
+ .skills__element:nth-child(3) .cpb-progress-value {
     stroke-dasharray: 200% 110%; }
 
 .circle-progress-bar {
@@ -324,14 +327,15 @@
 .circle-progress-bar .cpb-value {
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 30%;
     font-size: 3em;
-    font-family: "HelveticaNeueUltraLight", sans-serif; }
-.circle-progress-bar .cpb-value p {
-    font-family: "HelveticaNeueUltraLight", sans-serif; }
+    font-family: "HelveticaNeueUltraLight", sans-serif;
+}
+
 .circle-progress-bar .cpb-progress {
-    animation: dash 0.5s linear alternate; }
+    animation: dash 0.5s linear alternate;
+}
 
 .activity {
     border-radius: 3px;
@@ -365,7 +369,6 @@ footer {
 .footer__text {
     font-style: italic;
 }
-
 
 
 .photo {
@@ -410,33 +413,3 @@ figure {
         flex-basis: 32%;
     }
 }
-
-
-@media all and (max-width: 748px) {
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .all {
-        padding: 55px 20px 0;
-    }
-    .me__photo {
-        flex-basis: 100%;
-    }
-
-    .info__me {
-        flex-basis: 10px;
-    }
-    .experience {
-        flex-basis: 100%;
-    }
-    .interests__element {
-        flex-basis: 35%;
-    }
-
-    .skills__separate {
-        flex-flow: column;
-    }
-}
-

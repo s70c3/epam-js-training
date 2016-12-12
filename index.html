@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700%7CPT+Sans+Narrow&amp;subset=latin,cyrillic"
           rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<div class="all">
+<main class="all">
 
     <section class="info row">
 
@@ -34,7 +35,7 @@
                 музыке и французскому кино.
             </p>
 
-            <div class="me__separator row">
+            <div class="me__separator">
                 <div class="start"></div>
                 <div class="icon"></div>
                 <div class="end"></div>
@@ -90,10 +91,14 @@
                 <div class="circle-progress-bar">
                     <p class="cpb-value">55%</p>
                     <svg class="circle-svg">
+                        <linearGradient id="linear-gradient">
+                            <stop offset="0%" stop-color="#37a6d3"/>
+                            <stop offset="100%" stop-color="#1fcef2"/>
+                        </linearGradient>
                         <circle class="circle-progress-bar" r="100" cx="105" cy="105" fill="none" stroke="#ececec"
                                 stroke-width="5"></circle>
                         <circle class="circle-progress-bar cpb-progress cpb-progress-value" r="100" cx="105" cy="105"
-                                fill="none" stroke="#39a2d1" stroke-width="5"></circle>
+                                fill="none" stroke="url(#linear-gradient)" stroke-width="5"></circle>
                     </svg>
                 </div>
             </li>
@@ -104,10 +109,14 @@
                 <div class="circle-progress-bar">
                     <p class="cpb-value">80%</p>
                     <svg class="circle-svg">
+                        <linearGradient id="linear-gradient">
+                            <stop offset="0%" stop-color="#37a6d3"/>
+                            <stop offset="100%" stop-color="#1fcef2"/>
+                        </linearGradient>
                         <circle class="circle-progress-bar" r="100" cx="105" cy="105" fill="none" stroke="#ececec"
                                 stroke-width="5"></circle>
                         <circle class="circle-progress-bar cpb-progress cpb-progress-value" r="100" cx="105" cy="105"
-                                fill="none" stroke="#39a2d1" stroke-width="5"></circle>
+                                fill="none" stroke="url(#linear-gradient)" stroke-width="5"></circle>
                     </svg>
                 </div>
             </li>
@@ -118,10 +127,14 @@
                 <div class="circle-progress-bar">
                     <p class="cpb-value">60%</p>
                     <svg class="circle-svg">
+                        <linearGradient id="linear-gradient">
+                            <stop offset="0%" stop-color="#37a6d3"/>
+                            <stop offset="100%" stop-color="#1fcef2"/>
+                        </linearGradient>
                         <circle class="circle-progress-bar" r="100" cx="105" cy="105" fill="none" stroke="#ececec"
                                 stroke-width="5"></circle>
                         <circle class="circle-progress-bar cpb-progress cpb-progress-value" r="100" cx="105" cy="105"
-                                fill="none" stroke="#39a2d1" stroke-width="5"></circle>
+                                fill="none" stroke="url(#linear-gradient)" stroke-width="5"></circle>
                     </svg>
                 </div>
             </li>
@@ -257,7 +270,7 @@
         <img src="images/thats.png" width="150px" height="150px" alt=""/>
     </footer>
 
-</div>
+</main>
 
 </body>
 </html>
