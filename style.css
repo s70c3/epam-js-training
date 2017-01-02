@@ -1,0 +1,36 @@
+
+
+* {
+    font-family: "PT Sans", Arial, sans-serif;
+}
+.revertButton {
+ margin: 10px;
+ padding: 10px;
+ background-color: #04598b;
+ color: white;
+    width: 100px;
+    border-radius: 5px;
+}
+
+#cardContainer {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px;
+  cursor: default;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  border: 3px solid #04598b;
+  margin: 5px;
+  padding: 5px;
+  width: 250px;
+  background-color: #fff;
+
+}
+
+.card:hover {
+  background-color: #f3faff;
+}
+
