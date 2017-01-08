@@ -1,0 +1,17 @@
+* {
+   font-family: Arial;
+}
+h1 {
+    font-family: "Arial Narrow";
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+div {
+    margin-left: 20px;
+}
+
+.value {
+    font-style: italic;
+    color: navy;
+}
