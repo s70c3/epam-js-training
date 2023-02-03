@@ -1,0 +1,19 @@
+{
+  "name": "ajax-task",
+  "version": "1.0.0",
+  "description": "Ajax task",
+  "keywords": ["ajax", "epam"],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s70c3/3-js-axaj"
+  },
+  "author": "Maria Rumyantseva",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
